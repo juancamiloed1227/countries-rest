@@ -1,6 +1,9 @@
 trigger:
 - master
 
+variables:
+  azureSubscription: '{{ azureRmConnection.Id }}'
+
 stages:
   - stage: Build
     displayName: Build stage
