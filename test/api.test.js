@@ -1,6 +1,5 @@
 import { expect } from 'chai';
-import { getCountryByName } from '../controllers/api.js';
-import Log from '../models/log.js';
+import { getCountryByName } from '../src/controllers/api.js';
 
 describe('getCountryByName', () => {
   it('should return an object with area and population properties', async () => {
@@ -19,7 +18,6 @@ describe('getCountryByName', () => {
 
     // call the function
     const response = await getCountryByName(req, res, next);
-    console.log(response);
 
     // test results
     expect(res.statusCode).to.equal(200);

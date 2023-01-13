@@ -1,10 +1,10 @@
 {
   "all": true,
   "include": [
-    "controllers/**/*.js",
-    "models/**/*.js"
+    "/src/controllers/**/*.js",
+    "/src/models/**/*.js"
   ],
   "exclude": [
-    "test/**/*.test.js"
+    "/test/**/*.test.js"
   ]
 }

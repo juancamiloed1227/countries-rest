@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import Log from '../models/log.js';
+import Log from '../src/models/log.js';
 
 describe('Log', () => {
     it('should create a new log', (done) => {
