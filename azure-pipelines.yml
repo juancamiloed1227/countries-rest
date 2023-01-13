@@ -25,6 +25,7 @@ stages:
     jobs:
       - deployment: Deploy
         displayName: Deploy
+        environment: Countries Service
         pool:
           vmImage: ubuntu-latest
         strategy:
