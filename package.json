@@ -7,7 +7,6 @@
   "scripts": {
     "dev": "nodemon src/index.js",
     "start": "node src/index.js",
-    "build": "babel src --out-dir dist --ignore __test__",
     "test": "mocha --recursive --exit",
     "acceptance": "mocha ./acceptance-test --recursive --exit",
     "coverage": "npx c8 mocha"
@@ -16,6 +15,7 @@
   "author": "Juan Camilo Espinosa <juancamilo12.jced@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "mysql": "^2.18.1",
     "node-fetch": "^3.3.0"
